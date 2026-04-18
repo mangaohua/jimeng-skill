@@ -1,0 +1,19 @@
+{
+  "name": "jimeng-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check scripts/jimeng.mjs && node --check tests/jimeng.test.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

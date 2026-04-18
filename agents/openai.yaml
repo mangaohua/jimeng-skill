@@ -1,0 +1,4 @@
+interface:
+  display_name: "JiMeng Browser Generation"
+  short_description: "Persistent JiMeng image and video generation"
+  default_prompt: "Use $jimeng to log in once and generate a JiMeng video from my prompt."
