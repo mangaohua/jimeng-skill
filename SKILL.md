@@ -40,6 +40,8 @@ Useful options:
 ## Rules
 
 - Default profile path is `~/.jimeng-skill/accounts/<account_id>/profile`, so login is reusable across projects.
+- Reference images only work when you pass actual local file paths via `--ref`/`--refs`. A chat-side image description, sticker caption, or OCR summary is **not** a usable reference file.
+- If the user says "按这张图生成" or wants likeness preservation, first make sure the attachment exists as a local file, then pass it through `--ref`; otherwise be explicit that generation is prompt-only.
 - Do not extract cookies or call private JiMeng APIs. Operate through the browser UI.
 - Treat long JiMeng queues as pause points. Do not immediately rerun a fresh generation for the same asset; wait for the queued result, download it to `expected_output_path`, then continue from that file.
 - Selector drift, moderation, quota, and missing-download cases must return `waiting_human` with artifacts instead of pretending generation succeeded.
